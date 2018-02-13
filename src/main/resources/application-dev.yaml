@@ -1,0 +1,56 @@
+skylot:
+  machine:
+    id: a0ab952ebe89455e82c4c18921d992c4
+    address: 123.207.244.20
+    port: 803
+  webservice:
+    parking: http://wx-test02.belimked.com/saas02/parkingLogSynchronize/update/login
+    heartbeat: http://wx-test02.belimked.com/saas02/machineActionSynchronize/heartbeat/login
+upload:
+  file:
+    path: /Users/Saul/Desktop
+download:
+  file:
+    path: /Users/Saul/Desktop/ftp
+plc:
+   ip: 192.168.10.250
+   port: 9600
+   operation:
+     timeout: 3
+   thread:
+     timeout: 30
+machine:
+  ip: 192.168.10.4
+  operation:
+    timeout: 60
+marquee:
+  ip: 192.168.10.230
+  port: 8888
+#识别模式,#0:csv,#1,ftp和camera
+identify:
+  type: 1
+mgt:
+  username: 000001
+  password: 123456
+ftp:
+  ip: 192.168.10.11
+  port: 21
+  username: yy
+  password: 1
+  image:
+    file:
+      extension: .jpg
+      directory: /f/IVS(192.168.10.119)/channel_0/plate/
+      split: _
+logging:
+  level: warn
+spring:
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        hbm2ddl:
+          auto: update
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver

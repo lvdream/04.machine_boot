@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://192.168.10.11:3306/test_boot?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+    username: root
+    password: 123
+  http:
+    encoding:
+      force: true
+entitymanager:
+  packagesToScan: com.skylot.machine_boot
+flyway:
+  baseline-on-migrate: false
+  encoding: utf8
+  enabled: false
