@@ -1,6 +1,6 @@
 package com.skylot.machine_boot;
 
-import com.skylot.machine_boot.Repository.ClassroomRepository;
+import com.skylot.machine_boot.repository.ClassroomRepository;
 import com.skylot.machine_boot.base.SimplePageBuilder;
 import com.skylot.machine_boot.base.SimpleSortBuilder;
 import com.skylot.machine_boot.base.SimpleSpecificationBuilder;
