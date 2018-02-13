@@ -1,4 +1,5 @@
 skylot:
+  dateformater: yyyy-MM-dd HH:mm:ss
   machine:
     id: a0ab952ebe89455e82c4c18921d992c4
     address: 123.207.244.20
@@ -42,9 +43,12 @@ ftp:
       extension: .jpg
       directory: /f/IVS(192.168.10.119)/channel_0/plate/
       split: _
-logging:
-  level: warn
 spring:
+  datasource:
+    url: jdbc:mysql://10.8.0.190:3306/fangda_skylot_mathinemgt_test_02?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+    driver-class-name: com.mysql.jdbc.Driver
+    username: fangda
+    password: 123456
   jpa:
     properties:
       hibernate:
@@ -52,5 +56,3 @@ spring:
         dialect: org.hibernate.dialect.MySQL5Dialect
         hbm2ddl:
           auto: update
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver

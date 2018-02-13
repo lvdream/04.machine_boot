@@ -1,10 +1,6 @@
 spring:
   profiles:
     active: dev
-  datasource:
-    url: jdbc:mysql://192.168.10.11:3306/test_boot?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
-    username: root
-    password: 123
   http:
     encoding:
       force: true
@@ -14,3 +10,12 @@ flyway:
   baseline-on-migrate: false
   encoding: utf8
   enabled: false
+---
+spring:
+  profiles: pro
+  datasource:
+    url: jdbc:mysql://10.8.10.190:3306/fangda_skylot_mathinemgt_test_02?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+    username: fangda
+    password: 123456
+logging:
+  level: error

@@ -6,14 +6,17 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
+import javax.persistence.*;
 
+@Entity
+@Table(name = "oftb_sync_log")
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Slf4j
 public class OftbSyncLog {
-
+  @Id
   private long oslId;
   private String oslType;
   private long oslCount;
